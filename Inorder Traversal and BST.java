@@ -1,6 +1,6 @@
 // Given an array arr of size N, determine whether this array represents an inorder traversal of a BST. 
 
-// Note: All keys in BST must be unique. 
+// Note: All keys in BST must be unique
 
 
 class Solution
