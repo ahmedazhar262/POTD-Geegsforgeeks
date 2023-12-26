@@ -1,11 +1,11 @@
 // Anti Diagonal Traversal of Matrix
 
-class Solution
-{
-    public int[] antiDiagonalPattern(int[][] matrix)
-    {
-        // Code here
-         List<Integer> result = new ArrayList<>();
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution {
+    public static int[] antiDiagonalPattern(int[][] matrix) {
+        List<Integer> result = new ArrayList<>();
         int n = matrix.length;
 
         for (int i = 0; i < 2 * n - 1; i++) {
@@ -25,5 +25,20 @@ class Solution
         }
 
         return resultArray;
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int[] result = antiDiagonalPattern(matrix);
+
+        System.out.print("Anti-Diagonal Pattern: ");
+        for (int value : result) {
+            System.out.print(value + " ");
+        }
     }
 }
